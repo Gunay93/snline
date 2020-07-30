@@ -472,7 +472,7 @@ button:focus{
     font-size: 14px;
     height: 104px;
     cursor: pointer;
-    background: url(../img/arrow-down.png) center top no-repeat;
+    background: url('../img/arrow-down.png') center top no-repeat;
     z-index: 20;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
