@@ -969,7 +969,7 @@ footer {
     line-height: 15px !important;
     width: 100% !important;
 }
-.logo-ref {
+.logo-left {
     height: 15px;
     transform: rotate(-90deg) translate(50px, -20px);
     position: absolute;
@@ -993,7 +993,14 @@ footer {
     }
 }
 /* Model  */
-#model{padding:50px 0;border: 1px solid #eee;}
+#model{
+    padding:50px 0;
+    border: 1px solid #eee;
+    position: relative;
+}
+#model .logo-left{
+    bottom:auto
+}
 #model img{width:100%}
 .model-first{
     text-align: right;
