@@ -791,7 +791,7 @@ footer {
 .footer-contact a,.footer-links a{
     transition: all .25s ease-in-out;
 }
-.footer-contact a:hover,.footer-links a:hover{color:#2b763b}
+.footer-contact a:hover,.footer-links a:hover{color:#666779}
 .footer-contact li,.footer-links li {
     width:calc(25% - 4px);
 }
