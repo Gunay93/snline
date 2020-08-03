@@ -844,6 +844,7 @@ footer {
     -o-transition: all 10s;
     cursor:pointer
 }
+
 .about-img:hover img {
     -moz-transform: scale(2);
     -webkit-transform: scale(2);
@@ -887,12 +888,20 @@ footer {
     line-height: 24px;
     text-transform: uppercase;
 }
+.logo-site {
+    max-height: 25px;
+}
+.logo-site-text {
+    margin: 0;
+}
 /* Counter */
 #counter{
     padding: 75px 0px 75px;
     border-bottom: 1px solid #eee;
 }
 #counter .inner {
+    width: fit-content;
+    margin: 0 auto;
     height: 100%;
     display: flex;
     align-items: center;
@@ -927,7 +936,7 @@ footer {
     display:block;
     margin-top: 8px;
 }
-.container{overflow:hidden}
+.container,.container-fluid{overflow:hidden}
 #counter .counter-title {
     position: relative;
     font-size: 18px;
@@ -941,6 +950,30 @@ footer {
     padding: 50px 0 0 0;
 }
 #references .more em{width:15%}
+#references .ref-content:hover img {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+#references .ref-content{
+    cursor:pointer
+}
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 #references .col-md-3 img{width: 95%;}
 #references p{
     color:#e1e2ea;
@@ -960,6 +993,7 @@ footer {
 }
 #references .ref-content span{
     font-size: 95px;
+    display: inline-block;
     color: #add4db;
     padding-left: 33px;
 }

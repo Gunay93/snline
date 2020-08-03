@@ -4,15 +4,43 @@ $( document ).ready(function() {
         window.scrollTo({top: h, behavior: 'smooth'});
     })
     $(window).scroll(function() {
-		var modelh = $('.banner-section').height() + $('#references').height() + $('#about').height()
+		var footerh2 = $('.banner-section').height() + $('#references').height() + $('#about').height()  + $('#model').height() + $('#counter').height() + $('footer').height() - 100;
+		var counth = $('.banner-section').height() + $('#references').height() + $('#about').height()  + $('#model').height() - 100;
+		var footerh = $('.banner-section').height() + $('#references').height() + $('#about').height()  + $('#model').height() + $('#counter').height();
+		var modelh = $('.banner-section').height() + $('#references').height() + $('#about').height() - 100;
+		var refh = $('.banner-section').height() + $('#about').height() - 100;
+		var refabout = $('.banner-section').height()/2;
         if($(window).scrollTop()>20){
             $('#navbar').removeClass('d-none');
         }
 		else{$('#navbar').addClass('d-none');}
 		if($(window).scrollTop()>modelh){
-			$('.model-first img,.plus').addClass('fadeInDown');
-			$('.full-img-model').addClass('fadeInLeft')
-        }
+			$('.model-first img,.plus').addClass('fadeInDown').removeClass('d-none');
+			$('.full-img-model').addClass('fadeInLeft').removeClass('d-none');
+			$('.model-text').addClass('fadeInRight').removeClass('d-none');
+			$('#model .logo-left').removeClass('d-none');
+		}
+		if($(window).scrollTop()>refh){
+			$('.img-ref').addClass('fadeInUp');
+			$('#references .ref-content span').addClass('fadeInLeft');
+			$('#references h1').addClass('fadeInRight');
+			$('#references p').addClass('fadeInLeft');
+		}
+		if($(window).scrollTop()>refabout){
+			$('.addanim1').addClass('fadeInLeft');
+			$('.addanim2').addClass('fadeInRight');
+			$('.about-slogan').addClass('fadeInDown');
+		}
+		if($(window).scrollTop()>counth){
+			$('#counter .column').addClass('fadeInDown').removeClass('d-none');
+		}
+		if($(window).scrollTop()>footerh){
+			$('.footer-logo').addClass('fadeInUp');
+			$('.fb,.insta,.yt,.ln,.footer-social-text,.footer-contact,.footer-links').addClass('fadeInDown');
+		}
+		if($(window).scrollTop()>footerh2){
+			$('.addanim3,.addanim4,.addanim5').addClass('fadeInDown');
+		}
     });
 });
 (function($) {
