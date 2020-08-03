@@ -641,23 +641,29 @@ button:focus{
 .left-panel img{transform: rotate(-90deg);}
 /* Navbar */
 #navbar {
+    border-bottom: 1px solid #f7f8f9;
     padding: 2px 8px;
     position: fixed;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     width: 100%;
     z-index:9999;
     top:0;
 }
+@media (min-width: 1200px){
+    #navbar .container{max-width: 1400px;}
+}
+#navbar .container{overflow: visible;}
 .navbar-nav {
     width: 100%;
     justify-content: center;
 }
 #navbar .nav-link{
-    color:#666779;
-    font-size: 17px;
+    color: #666779;
+    font-size: 15px;
     padding: 10px 18px;
     transition: 0.3s;
     position: relative;
+    text-transform: uppercase;
 }
 #navbar .nav-link:hover:after {
     content: "";
@@ -668,7 +674,6 @@ button:focus{
     display: block;
     background-color:#666779;
     margin: 0 auto;
-    transform: translateY(5px);
     opacity: 1;
     left: calc(50% - 3px);
     transition: 200ms all ease;
@@ -680,10 +685,10 @@ button:focus{
     color:white
 }
 #navbar .nav-item .dropdown-menu a{
-    font-size: 14px;
-    color:#333;
+    font-size: 15px;
+    color: #333;
     padding: 10px 25px;
-    transition:0.3s
+    transition: 0.3s;
 }
 .dropdown-menu{display: none;}
 @media (min-width: 1200px) {
@@ -725,9 +730,11 @@ footer {
 .footer-logo {
     height: 67px;
     margin-bottom:75px;
+    object-fit: contain;
 }
 .footer-social-text {
-    font-size: 14px;
+    font-family: 'FTN_medium';
+    font-size: 16px;
     margin-bottom: 20px;
     color: #333;
 }
@@ -735,6 +742,7 @@ footer {
     background-color: #65667a;
     color: white;
     padding: 50px 0;
+    font-family: 'FTN_medium';
 }
 .footer-bottom-copy {
     font-size: 14px;
@@ -762,15 +770,18 @@ footer {
 .footer-social li {
     display: inline-block;
     margin-right: 10px;
-    padding: 10px 9px;
-    border-radius: 50%;
-    background-color: #afbbc6;
+    border-radius: 4px;
+    background-color: #add4db;
     width: 40px;
     height: 40px;
     text-align: center;
     transition: all .25s ease-in-out;
 }
-.footer-social li a{color:white}
+.footer-social li a{
+    color:white !Important;
+    display: inline-block;
+    padding: 10px 9px;
+}
 .footer-social li a i{font-size:20px}
 .footer-social .fb:hover{background: #5462ae;}
 .footer-social .insta:hover{background: #ff539b;}
@@ -813,22 +824,23 @@ footer {
     display: block;
 }
 .footer-contact p{
+    font-family: 'FTN_medium';
     line-height: 20px;
     font-size: 13px;
     margin: 0;
 }
 /* About */
 #about{
-    background-color:#f6f7f8;
-    padding:50px 0;
+    background-color: #f6f7f8;
+    padding: 100px 0 50px;
 } 
 #about h1{
     text-transform: uppercase;
     font-family: 'FTN_heavy';
-    font-size: 40px;
-    line-height: 46px;
-    color:black;
-    margin-bottom:24px;
+    font-size: 34px;
+    line-height: 41px;
+    color: black;
+    margin-bottom: 45px;
     letter-spacing: 1px;
 }
 .about-img{
@@ -855,9 +867,10 @@ footer {
 #about p{
     letter-spacing: 0.2px;
     text-transform: uppercase;
-    font-size:12px;
-    color:#585858;
+    font-size: 12px;
+    color: #585858;
     line-height: 24px;
+    margin-bottom: 22px;
 }
 .about-img:after {
     content: "";
@@ -871,7 +884,7 @@ footer {
 }
 .about-slogan strong {
     display: block;
-    font-size: 80px;
+    font-size: 90px;
     line-height: 80px;
     font-family: 'FTN_heavy';
     color: rgba(191,191,191,0.3);
