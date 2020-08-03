@@ -725,7 +725,8 @@ button:focus{
 #navbar.navbar-down{background-color:white;box-shadow: 0 4px 4px rgba(0,0,0,0.07);z-index: 16;}
 /* Footer  */
 footer {
-    padding: 50px 0;
+    padding: 90px 0;
+    background: #f4f4f4;
 }
 .footer-logo {
     height: 67px;
@@ -911,6 +912,7 @@ footer {
 #counter{
     padding: 75px 0px 75px;
     border-bottom: 1px solid #eee;
+    background: #f7f8f9;
 }
 #counter .inner {
     width: fit-content;
@@ -927,7 +929,7 @@ footer {
 }
 #counter .icon-box {
     font-size: 60px;
-    color: #d5ac63;
+    color: #add4db;
     line-height: 1em;
     font-weight: 300;
 }
@@ -945,8 +947,8 @@ footer {
     left: 100%;
     width: 50px;
     height: 2px;
-    background-color: #d5ac63;
-    display:block;
+    background-color: #add4db;
+    display: block;
     margin-top: 8px;
 }
 .container,.container-fluid{overflow:hidden}
@@ -1048,7 +1050,12 @@ footer {
 #model .logo-left{
     bottom:auto
 }
-#model img{width:100%}
+#model img{
+    width:100%
+}
+#model img,.plus,.model-text{
+    animation-duration: 500ms;
+}
 .model-first{
     text-align: right;
     color: #b3b3b3;
@@ -1062,12 +1069,9 @@ footer {
     font-family: initial;
     margin: 0 -14px;
 }
-.model-text-content{
-    left: -90px;
-}
 .model-text{
-    font-size: 28px;
-    font-family: 'FTN_medium';
-    color: #7f808a;
+    font-size: 38px;
+    font-family: 'FTN_heavy';
+    color: #add4db;
     padding: 100px 0;
 }
