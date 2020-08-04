@@ -898,7 +898,6 @@ footer {
 /* Counter */
 #counter{
     padding: 75px 0px 75px;
-    border-bottom: 1px solid #eee;
     background: #f7f8f9;
 }
 #counter .inner {
@@ -1032,7 +1031,6 @@ footer {
 /* Model  */
 #model{
     padding:50px 0;
-    border: 1px solid #eee;
     position: relative;
 }
 #model .logo-left{

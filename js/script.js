@@ -8,9 +8,9 @@ $( document ).ready(function() {
     })
     $(window).scroll(function() {
 		var footerh2 = $('.banner-section').height() + $('#references').height() + $('#about').height()  + $('#model').height() + $('#counter').height() + $('footer').height() - 100;
-		var counth = $('.banner-section').height() + $('#references').height() + $('#about').height()  + $('#model').height() - 100;
+		var modelh = $('.banner-section').height() + $('#references').height() + $('#about').height()  + $('#model').height();
 		var footerh = $('.banner-section').height() + $('#references').height() + $('#about').height()  + $('#model').height() + $('#counter').height();
-		var modelh = $('.banner-section').height() + $('#references').height() + $('#about').height() - 100;
+		var counth = $('.banner-section').height() + $('#references').height() + $('#about').height() - 100;
 		var refh = $('.banner-section').height() + $('#about').height() - 100;
 		var refabout = $('.banner-section').height()/2;
         if($(window).scrollTop()>20){
