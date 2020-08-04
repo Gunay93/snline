@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+	$('.icon-block-lang').click(function(){
+        $('.lang-dropdown').slideToggle();
+    });
     $('.mouse-btn-down').click(function(){
         var h = $('.banner-section').height()
         window.scrollTo({top: h, behavior: 'smooth'});
@@ -16,6 +19,7 @@ $( document ).ready(function() {
 		else{$('#navbar').addClass('d-none');}
 		if($(window).scrollTop()>modelh){
 			$('.model-first img,.plus').addClass('fadeInDown').removeClass('d-none');
+			$('.model-title').addClass('fadeIn').removeClass('d-none');
 			$('.full-img-model').addClass('fadeInLeft').removeClass('d-none');
 			$('.model-text').addClass('fadeInRight').removeClass('d-none');
 			$('#model .logo-left').removeClass('d-none');
