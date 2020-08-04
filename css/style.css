@@ -985,6 +985,7 @@ footer {
     font-family: 'FTN_medium';
 }
 #references h1 {
+    margin:0;
     position: relative;
     color: #65667a;
     display: inline-block;
