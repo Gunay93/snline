@@ -7,16 +7,6 @@ button:focus{
     border:none;
 }
 
-.left-panel {
-	position: absolute;
-	left: 0;
-	width: 90px;
-	bottom: 0;
-	z-index: 999;
-	background: #ffffff;
-	padding: 40px 0;
-}
-
 .left-panel .content-wrap {
 	position: relative;
 }
@@ -527,16 +517,6 @@ button:focus{
         -webkit-transform: rotateX(0deg) translateY(0px);
         transform: rotateX(0deg) translateY(0px)
     }
-}
-.right-panel{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 95px;
-    bottom: 0;
-    z-index: 9999;
-    background: #f4f4f4;
-    overflow: hidden;
 }
 .left-panel{
     position: absolute;
@@ -1151,8 +1131,6 @@ footer {
     display: inline-flex;
     padding: 4px 9px;
     border-radius: 100%;
-    background-color: #add4db;
-    color: white;
     align-items: center;
     justify-content: center;
     height: 32px;
@@ -1161,4 +1139,7 @@ footer {
 .social-header li i{transition: 500ms}
 .social-header li:hover i{
     transform: rotate(180deg);
+}
+.lang-dropdown .langs li:hover {
+    background-color: #f5f5f5;
 }
