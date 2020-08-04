@@ -227,6 +227,7 @@ button:focus{
 }
 
 .banner-section .content-box .text {
+    font-family: 'FTN_medium';
 	position: relative;
 	font-size: 18px;
 	line-height: 1.2em;
