@@ -1060,8 +1060,8 @@ footer {
 #model img{
     width:100%
 }
-#model img,.plus,.model-text{
-    animation-duration: 500ms;
+#model img,.plus,.model-text,.model-title{
+    animation-duration: 150ms;
 }
 .model-first{
     text-align: right;
