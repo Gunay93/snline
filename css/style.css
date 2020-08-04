@@ -817,15 +817,15 @@ footer {
 /* About */
 #about{
     background-color: #f6f7f8;
-    padding: 100px 0 50px;
+    padding: 65px 0 30px;
 } 
 #about h1{
     text-transform: uppercase;
     font-family: 'FTN_heavy';
-    font-size: 34px;
+    font-size: 30px;
     line-height: 41px;
     color: black;
-    margin-bottom: 45px;
+    margin-bottom: 20px;
     letter-spacing: 1px;
 }
 .about-img{
@@ -849,13 +849,21 @@ footer {
     -ms-transform: scale(2);
     transform: scale(2);
 }
-#about p{
+#about p,#about li{
     letter-spacing: 0.2px;
-    text-transform: uppercase;
-    font-size: 12px;
+    font-size: 15px;
     color: #585858;
-    line-height: 24px;
-    margin-bottom: 22px;
+    font-family: 'FTN_medium';
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+#about ul{padding:0}
+#about h6{
+    font-family: FTN_heavy;
+    font-size: 17px;
+    color: black;
+    margin-bottom:0;
+    margin-top:20px
 }
 .about-img:after {
     content: "";
